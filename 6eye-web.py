@@ -38,6 +38,7 @@ feature_values = [
 ]
 features = np.array([feature_values])
 
+
 # 数字标签和文本标签的映射关系
 label_mapping = {
     0: "High myopia",
