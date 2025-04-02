@@ -15,21 +15,21 @@ feature_names = [
 ]
 
 # Streamlit 用户界面
-st.title("Predicting complications of high myopia")
-st.write('Please enter the following clinical indicators to predict complications of high myopia:')
+st.title("Screening complications of high myopia")
+st.write('Please enter the following clinical indicators to screen complications of high myopia:')
 
 # 用户输入特征数据 - 修改为9个新特征
-input_eos = st.number_input("EOS (Eosinophil count):", min_value=0.0, max_value=100.0, value=0.5, format="%.2f")
-input_pct = st.number_input("PCT (Procalcitonin):", min_value=0.0, max_value=100.0, value=0.1, format="%.2f")
-input_p_baso = st.number_input("P_BASO (Basophil percentage):", min_value=0.0, max_value=100.0, value=0.5,
-                               format="%.2f")
-input_m = st.number_input("M (Monocyte count):", min_value=0.0, max_value=100.0, value=0.8, format="%.2f")
-input_ua = st.number_input("UA (Uric acid):", min_value=0.0, max_value=1000.0, value=300.0, format="%.1f")
-input_lpb = st.number_input("LPB (Lipoprotein B):", min_value=0.0, max_value=100.0, value=50.0, format="%.1f")
-input_baso = st.number_input("BASO (Basophil count):", min_value=0.0, max_value=100.0, value=0.1, format="%.2f")
-input_p_eos = st.number_input("P_EOS (Eosinophil percentage):", min_value=0.0, max_value=100.0, value=2.0,
+input_eos = st.number_input("Eosinophil count(10^9/L):", min_value=0.0, max_value=100.0, value=0.13, format="%.2f")
+input_pct = st.number_input("PCT (%):", min_value=0.0, max_value=100.0, value=0.19, format="%.2f")
+input_p_baso = st.number_input("Basophil percentage(%):", min_value=0.0, max_value=100.0, value=0.7,
+                               format="%.1f")
+input_m = st.number_input("Monocyte count(10^9/L):", min_value=0.0, max_value=100.0, value=0.34, format="%.2f")
+input_ua = st.number_input("UA (μmol/L):", min_value=0.0, max_value=1000.0, value=370.0, format="%.1f")
+input_lpb = st.number_input("LPB (g/L):", min_value=0.0, max_value=100.0, value=1.03, format="%.1f")
+input_baso = st.number_input("Basophil count(10^9/L):", min_value=0.0, max_value=100.0, value=0.04, format="%.2f")
+input_p_eos = st.number_input("Eosinophil percentage(%):", min_value=0.0, max_value=100.0, value=2.3,
                               format="%.1f")
-input_tg = st.number_input("TG (Triglycerides):", min_value=0.0, max_value=1000.0, value=150.0, format="%.1f")
+input_tg = st.number_input("TG (mmol/L):", min_value=0.0, max_value=1000.0, value=1.0, format="%.1f")
 
 # 将输入的数据转化为模型的输入格式
 feature_values = [
