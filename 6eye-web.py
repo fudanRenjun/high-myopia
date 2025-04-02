@@ -6,7 +6,7 @@ import shap
 import matplotlib.pyplot as plt
 
 # 加载随机森林模型
-model = joblib.load('E:/RS/6eye/feature/RF/RF9.pkl')
+model = joblib.load()
 
 # 定义新的特征名称
 feature_names = [
