@@ -20,12 +20,12 @@ st.write('Please enter the following clinical indicators to screen complications
 
 # 用户输入特征数据 - 修改为9个新特征
 input_eos = st.number_input("Eosinophil count(10^9/L):", min_value=0.0, max_value=100.0, value=0.07, format="%.2f")
-input_pct = st.number_input("PCT (%):", min_value=0.0, max_value=100.0, value=0.17, format="%.2f")
+input_pct = st.number_input("Plateletcrit (%):", min_value=0.0, max_value=100.0, value=0.17, format="%.2f")
 input_p_baso = st.number_input("Basophil percentage(%):", min_value=0.0, max_value=100.0, value=0.5,
                                format="%.1f")
 input_m = st.number_input("Monocyte count(10^9/L):", min_value=0.0, max_value=100.0, value=0.37, format="%.2f")
-input_ua = st.number_input("UA (μmol/L):", min_value=0.0, max_value=1000.0, value=180.0, format="%.1f")
-input_lpb = st.number_input("LPB (g/L):", min_value=0.0, max_value=100.0, value=0.8, format="%.1f")
+input_ua = st.number_input("Uric Acid (μmol/L):", min_value=0.0, max_value=1000.0, value=180.0, format="%.1f")
+input_lpb = st.number_input("Lipoprotein B (g/L):", min_value=0.0, max_value=100.0, value=0.8, format="%.1f")
 input_baso = st.number_input("Basophil count(10^9/L):", min_value=0.0, max_value=100.0, value=0.02, format="%.2f")
 input_p_eos = st.number_input("Eosinophil percentage(%):", min_value=0.0, max_value=100.0, value=1.7,
                               format="%.1f")
