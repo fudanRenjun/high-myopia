@@ -58,7 +58,7 @@ if st.button("Predict"):
     
     # 自定义样式
     ax.set_ylabel('Probability (%)', fontsize=12)
-    ax.set_title('Predicted Probabilities for Each Class', fontsize=14)
+    ax.set_title('Predicted Probabilities for Each complications of high myopia', fontsize=14)
     ax.set_ylim(0, 100)  # 固定y轴范围
     
     # 在柱子上方显示数值
